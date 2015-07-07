@@ -3,6 +3,8 @@ class Node():
 		self.value = value
 		self.left = left
 		self.right = right
+	def __str__():
+		return self.value
 
 n1 = Node("1", None, None)
 n2 = Node("2", None, None)
@@ -13,6 +15,9 @@ n5 = Node("5", n3, n4)
 def printBreath(startNode):
 	stack = [startNode]
 	while stack:
+		for node in stack:
+			print node.value,
+		print ""
 		aNode = stack.pop()
 		if(aNode):
 			print aNode.value

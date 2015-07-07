@@ -1,0 +1,5 @@
+myAwesomeInteger = 3;
+for i = 1: 5: 2
+  myAwesomeInteger = myAwesomeInteger + i;
+end
+disp(i);
